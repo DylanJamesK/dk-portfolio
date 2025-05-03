@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+:root {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-bg: #F7F8F9;
+  --color-sec-bg: #B3B9C4;
+  --color-tir-bg: #091E42;
+  --color-text: #091E42;
+  --color-text-secondary: #B3B9C4;
+  --color-text-tirtiary: #F7F8F9;
+  --color-svg-fill: #091E42;
+  --color-border: #091E42;
+}
+
+.theme-default {
+  --color-bg: #F7F8F9;
+  --color-sec-bg: #B3B9C4;
+  --color-tir-bg: #091E42;
+  --color-text: #091E42;
+  --color-text-secondary: #B3B9C4;
+  --color-text-tirtiary: #F7F8F9;
+  --color-svg-fill: #091E42;
+  --color-border: #091E42;
+}
+
+.theme-blue-mode {
+  --color-bg: #09326C;
+  --color-sec-bg: #85B8FF;
+  --color-tir-bg: #CCE0FF;
+  --color-text: #CCE0FF;
+  --color-text-secondary: #85B8FF;
+  --color-text-tirtiary: #09326C;
+  --color-svg-fill: #CCE0FF;
+  --color-border: #CCE0FF;
+}
+
+.theme-orange-mode {
+  --color-bg: #E56910;
+  --color-sec-bg:  #FEA362;
+  --color-tir-bg: #FEDEC8;
+  --color-text: #FEDEC8;
+  --color-text-secondary: #FEA362;
+  --color-text-tirtiary: #E56910;
+  --color-svg-fill: #FEDEC8;
+  --color-border: #FEDEC8;
+}
+
+.theme-green-mode {
+  --color-bg: #1F845A;
+  --color-sec-bg: #4BCE97;
+  --color-tir-bg: #BAF3DB;
+  --color-text: #BAF3DB;
+  --color-text-secondary: #4BCE97;
+  --color-text-tirtiary: #1F845A;
+  --color-svg-fill: #BAF3DB;
+  --color-border: #BAF3DB;
+}
+
+.theme-red-mode {
+  --color-bg: #5c2828;
+  --color-sec-bg: #ac4b4b;
+  --color-tir-bg: #ffc7c7;
+  --color-text: #ffc7c7;
+  --color-text-secondary: #ac4b4b;
+  --color-text-tirtiary: #5c2828;
+  --color-svg-fill: #ffc7c7;
+  --color-border: #ffc7c7;
+}
+
+.theme-dark-mode {
+  --color-bg: #161A1D;
+  --color-sec-bg: #738496;
+  --color-tir-bg: #DEE4EA;
+  --color-text: #DEE4EA;
+  --color-text-secondary: #738496;
+  --color-text-tirtiary: #161A1D;
+  --color-svg-fill: #DEE4EA;
+  --color-border: #DEE4EA;
+}
+
+
+/* Dynamic utility classes */
+.bg-dynamic {
+  background-color: var(--color-bg);
+}
+
+.bg-sec-dynamic {
+  background-color: var(--color-sec-bg);
+}
+
+.bg-tir-dynamic {
+  background-color: var(--color-tir-bg);
+}
+
+.txt-dynamic {
+  color: var(--color-text);
+}
+.txt-sec-dynamic {
+  color: var(--color-text-secondary);
+}
+.txt-tir-dynamic {
+  color: var(--color-text-tirtiary);
+}
+
+.txt-link-dynamic {
+  color: var(--color-text-secondary);
+}
+.txt-link-dynamic:hover {
+  color: var(--color-text);
+}
+
+.fill-dynamic {
+  fill: var(--color-svg-fill);
+}
+
+.border-dynamic {
+  border-color: var(--color-border);
+}
+
+
+@keyframes pulse-beacon {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

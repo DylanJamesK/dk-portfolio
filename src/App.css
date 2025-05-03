@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* styles/globals.css or wherever your global styles live */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
