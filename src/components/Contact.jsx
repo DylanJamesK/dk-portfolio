@@ -61,13 +61,13 @@ export default function Contact() {
 
 
       {/* Right Column - Photo */}
-      <div className="w-100 h-100 2xl:w-125 2xl:h-125 flex-shrink-0 rounded-xl overflow-hidden bg-dynamic">
-        <img
-          src="../DK_Profile.jpg"
-          alt="Dylan Kerr"
-          className="object-cover w-full h-full"
-        />
-      </div>
+      <div className="w-full max-w-[500px] h-auto flex-shrink-0 rounded-xl overflow-hidden bg-dynamic">
+  <img
+    src="../DK_Profile.jpg"
+    alt="Dylan Kerr"
+    className="object-cover w-full h-full"
+  />
+</div>
     </div>
   );
 }
