@@ -402,7 +402,7 @@ const projectData = [
                 layout: 'two-column',
                 value: [
                     { type: 'image', src: '../XR/MRFlightDebrief/BingMaps.PNG', caption: 'Geo Data from Bing Maps API'},
-                    { type: 'video', src: '../XR/MRFlightDebrief/MixedReality_FlightShort.mp4', caption: 'Interacting with Animated Flight Path' },
+                    { type: 'video', src: '../XR/MRFlightDebrief/MixedReality_FlightShortVideo.mp4', caption: 'Interacting with Animated Flight Path' },
                 ]
               },
               {
@@ -424,7 +424,7 @@ const projectData = [
                 ]
               },
               { type: 'bold-text', value: 'I demoed a prototype that used multiple HoloLens 2 headsets and spatial anchors to allow a shared real-time environment.' },
-              { type: 'video', value: '/XR/MRFlightDebrief/MRInterfaceRecording1.mp4', layout: 'full-bleed' },
+              { type: 'video', value: '/XR/MRFlightDebrief/MRInterfaceRecordingVideo.mp4', layout: 'full-bleed' },
           ],
     },
     {
