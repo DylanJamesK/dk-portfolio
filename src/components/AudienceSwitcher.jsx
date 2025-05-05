@@ -25,22 +25,24 @@ export default function AudienceSwitcher() {
 
   return (
     <div className="bg-dynamic flex flex-col items-start space-y-6 pt-52 pr-10 pl-10 md:pl-10 xl:pl-[25%] xl:pr-10">
-        {/* Tab Selector */}
-        <div className="flex overflow-x-auto no-scrollbar whitespace-nowrap space-x-6 text-md">
-        {tabs.map(({ id, label }) => (
+      {/* Tab Selector */}
+      <div className="w-full overflow-x-auto no-scrollbar">
+        <div className="flex whitespace-nowrap space-x-6 text-md w-max">
+          {tabs.map(({ id, label }) => (
             <button
-            key={id}
-            onClick={() => setSelected(id)}
-            className={`transition-colors duration-200 shrink-0 ${
+              key={id}
+              onClick={() => setSelected(id)}
+              className={`transition-colors duration-200 shrink-0 ${
                 selected === id
-                ? 'txt-dynamic underline-offset-4 font-bold'
-                : 'txt-link-dynamic hover:txt-link-dynamic'
-            }`}
+                  ? 'txt-dynamic underline-offset-4 font-bold'
+                  : 'txt-link-dynamic hover:txt-link-dynamic'
+              }`}
             >
-            {label}
+              {label}
             </button>
-        ))}
+          ))}
         </div>
+      </div>
 
       {/* Animated Message */}
       <div className="min-h-[4rem] max-w-8xl w-full">
