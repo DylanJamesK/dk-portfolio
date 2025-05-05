@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
-import TopNav from './components/Topnav';
+import TopNav from './components/TopNav';
 import IntroOverlay from './components/IntroOverlay';
 import { motion, AnimatePresence } from 'framer-motion';
 
