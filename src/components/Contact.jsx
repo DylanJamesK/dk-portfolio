@@ -41,7 +41,7 @@ export default function Contact() {
                 <FaLinkedin className="w-6 h-6 txt-link-dynamic transition" />
             </a>
             <a
-                href="/DKResume_2025_.pdf"
+                href="/DylanJKerr_Resume2025.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
             >
